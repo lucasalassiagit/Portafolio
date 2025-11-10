@@ -1,0 +1,96 @@
+<!-- Proyecto 3: Carrito de Compras -->
+          <div class="project-card">
+            <div
+              class="project-carousel"
+              id="carousel-2"
+              data-project="red-social"
+            >
+              <div class="carousel-track">
+                <div class="carousel-slide">
+                  <img
+                    src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                    alt="Carrito - Lista de productos"
+                  />
+                </div>
+                <div class="carousel-slide">
+                  <img
+                    src="https://images.unsplash.com/photo-1611605698335-8b1569810432?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                    alt="Carrito - Detalles producto"
+                  />
+                </div>
+                <div class="carousel-slide">
+                  <img
+                    src="https://images.unsplash.com/photo-1577563908411-5077b6dc7624?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                    alt="Carrito - Checkout"
+                  />
+                </div>
+              </div>
+              <button
+                class="carousel-btn prev"
+                onclick="moveSlide('carousel-2', -1)"
+              >
+                ❮
+              </button>
+              <button
+                class="carousel-btn next"
+                onclick="moveSlide('carousel-2', 1)"
+              >
+                ❯
+              </button>
+              <div class="carousel-dots">
+                <button
+                  class="carousel-dot active"
+                  onclick="goToSlide('carousel-2', 0)"
+                ></button>
+                <button
+                  class="carousel-dot"
+                  onclick="goToSlide('carousel-2', 1)"
+                ></button>
+                <button
+                  class="carousel-dot"
+                  onclick="goToSlide('carousel-2', 2)"
+                ></button>
+              </div>
+              <div class="carousel-overlay">
+                <div class="overlay-text">
+                  Haz clic para ver galería completa
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>Sistema de Gestión de Compras/Pedidos</h3>
+              <span class="project-type">Proyecto Académico</span>
+              <p class="project-description">
+                Sistema de carrito de compras funcional con gestión de productos
+                y proceso de checkout. Desarrollado como parte de mi formación
+                académica.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">ASP.NET Core MVC</span>
+                <span class="tech-tag">SQL Server</span>
+                <span class="tech-tag">Bootstrap</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://github.com/lucasalassiagit/SistemaDeGestionMVC"
+                  target="_blank"
+                  class="project-link"
+                >
+                  <i class="fab fa-github"></i>
+                  Código
+                </a>
+                <a
+                  href="#"
+                  class="project-link demo disabled"
+                  style="
+                    pointer-events: none;
+                    opacity: 0.6;
+                    cursor: not-allowed;
+                  "
+                >
+                  <i class="fas fa-external-link-alt"></i>
+                  Proximamente
+                </a>
+              </div>
+            </div>
+          </div> 

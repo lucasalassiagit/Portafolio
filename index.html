@@ -1,0 +1,1140 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Lucas Nahuel Alassia - Portafolio</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💻</text></svg>">
+  </head>
+  <body>
+    <!-- Navegación fija -->
+    <nav class="navbar" id="navbar">
+      <div class="nav-container">
+        <ul class="nav-links">
+          <li><a href="#about" class="active">Sobre Mí</a></li>
+          <li><a href="#skills">Habilidades</a></li>
+          <li><a href="#projects">Proyectos</a></li>
+          <li><a href="#education">Formación</a></li>
+          <li><a href="#contact">Contacto</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Modal para carrusel ampliado - NUEVA VERSIÓN -->
+    <div class="modal" id="imageModal">
+      <div class="modal-content">
+        <button class="modal-close" id="modalClose">&times;</button>
+        <div class="modal-counter" id="modalCounter">1 / 3</div>
+        <div class="modal-carousel">
+          <div class="modal-track" id="modalTrack">
+            <!-- Las slides se insertarán dinámicamente -->
+          </div>
+          <button class="modal-btn prev" id="modalPrev">❮</button>
+          <button class="modal-btn next" id="modalNext">❯</button>
+          <div class="modal-dots" id="modalDots">
+            <!-- Los dots se insertarán dinámicamente -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Efecto de partículas -->
+    <div class="particles" id="particles"></div>
+
+    <header>
+      <div class="container">
+        <h1>Lucas Nahuel Alassia</h1>
+        <p>Estudiante de Técnicatura Universitaria en Programación</p>
+        <p class="subtitle">Desarrollador Full Stack | .NET & React</p>
+        <div class="cta-buttons">
+          <a href="#projects" class="cta-btn">
+            <i class="fas fa-rocket"></i>
+            Ver Proyectos
+          </a>
+          <a href="#contact" class="cta-btn secondary">
+            <i class="fas fa-paper-plane"></i>
+            Contactar
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <div class="container">
+      <section class="section" id="about">
+        <h2>Sobre Mí</h2>
+        <div class="about">
+          <div class="profile-img">
+            <img src="foto.jpg" alt="Lucas Nahuel Alassia" />
+          </div>
+          <div class="about-text">
+            <p>
+              ¡Hola! Soy Lucas, un desarrollador apasionado por la tecnología y
+              el aprendizaje continuo. Actualmente estoy cursando segundo año de
+              la carrera Técnico Universitario en Programación en la UTN -
+              Facultad Regional Rafaela.
+            </p>
+            <p>
+              Me especializo en desarrollo full stack con .NET y React, y tengo
+              experiencia creando aplicaciones web completas, desde el diseño de
+              bases de datos hasta la implementación de interfaces de usuario
+              modernas y funcionales.
+            </p>
+            <div class="qualities">
+              <span class="quality-tag">Autodidacta</span>
+              <span class="quality-tag">Responsable</span>
+              <span class="quality-tag">Organizado</span>
+              <span class="quality-tag">Colaborador</span>
+              <span class="quality-tag">Comprometido</span>
+              <span class="quality-tag">Eficiente</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="skills">
+        <h2>Habilidades Técnicas</h2>
+        <div class="skills">
+          <div class="skill-item">
+            <h3>💻 Lenguajes de Programación</h3>
+            <p>
+              <span class="tech-tag">C#</span>
+              <span class="tech-tag">Java</span>
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">C/C++</span>
+            </p>
+          </div>
+          <div class="skill-item">
+            <h3>🌐 Desarrollo Web & Frameworks</h3>
+            <p>
+              <span class="tech-tag">ASP.NET Core</span>
+              <span class="tech-tag">React</span>
+              <span class="tech-tag">NestJS</span>
+              <span class="tech-tag">HTML</span>
+              <span class="tech-tag">CSS</span>
+            </p>
+          </div>
+          <div class="skill-item">
+            <h3>⚙️ Backend & APIs</h3>
+            <p>
+              <span class="tech-tag">ASP.NET Core MVC</span>
+              <span class="tech-tag">Web API RESTful</span>
+              <span class="tech-tag">Entity Framework</span>
+              <span class="tech-tag">Windows Forms</span>
+            </p>
+          </div>
+          <div class="skill-item">
+            <h3>🗄️ Bases de Datos</h3>
+            <p>
+              <span class="tech-tag">SQL Server</span>
+              <span class="tech-tag">PostgreSQL</span>
+              <span class="tech-tag">MySQL</span>
+            </p>
+          </div>
+          <div class="skill-item">
+            <h3>🔧 Herramientas & Control de Versiones</h3>
+            <p>
+              <span class="tech-tag">Git</span>
+              <span class="tech-tag">GitHub</span>
+              <span class="tech-tag">Microsoft Office</span>
+            </p>
+          </div>
+          <div class="skill-item">
+            <h3>⚡ Habilidades Técnicas Adicionales</h3>
+            <p>
+              Electricista domiciliario, instalaciones y mantenimiento.
+              Experiencia en taller mecánico automotriz.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="projects">
+        <h2>Proyectos Destacados</h2>
+        <div class="projects">
+          <!-- Proyecto 1: E-Commerce -->
+          <div class="project-card">
+            <div
+              class="project-carousel"
+              id="carousel-1"
+              data-project="ecommerce"
+            >
+              <div class="carousel-track">
+                <div class="carousel-slide">
+                  <img
+                    src="CapturasSitiosWeb/e-commerce/Home-e-commerce.png"
+                    alt="E-Commerce - Home"
+                  />
+                </div>
+                <div class="carousel-slide">
+                  <img
+                    src="CapturasSitiosWeb/e-commerce/Crear-Publicacion-e-commerce.png"
+                    alt="E-Commerce - Crear Publicacion"
+                  />
+                </div>
+                <div class="carousel-slide">
+                  <img
+                    src="CapturasSitiosWeb/e-commerce/Historial-Ventas-e-commerce.png"
+                    alt="E-Commerce - Historial Ventas"
+                  />
+                </div>
+                <div class="carousel-slide">
+                  <img
+                    src="CapturasSitiosWeb/e-commerce/Gestion-productos-e-commerce.png"
+                    alt="E-Commerce - Gestor Ventas"
+                  />
+                </div>
+                <div class="carousel-slide">
+                  <img
+                    src="CapturasSitiosWeb/e-commerce/Panel-Administrador-e-commerce.png"
+                    alt="E-Commerce - Gestor Administrador"
+                  />
+                </div>
+                <div class="carousel-slide">
+                  <img
+                    src="CapturasSitiosWeb/e-commerce/Login-e-commerce.png"
+                    alt="E-Commerce - Login"
+                  />
+                </div>
+                <div class="carousel-slide">
+                  <img
+                    src="CapturasSitiosWeb/e-commerce/Registro-e-commerce.png"
+                    alt="E-Commerce - Register"
+                  />
+                </div>
+                <div class="carousel-slide">
+                  <img
+                    src="CapturasSitiosWeb/e-commerce/Carrito-e-commerce.png"
+                    alt="E-Commerce - Carrito"
+                  />
+                </div>
+              </div>
+              <button
+                class="carousel-btn prev"
+                onclick="moveSlide('carousel-1', -1)"
+              >
+                ❮
+              </button>
+              <button
+                class="carousel-btn next"
+                onclick="moveSlide('carousel-1', 1)"
+              >
+                ❯
+              </button>
+              <div class="carousel-dots">
+                <button
+                  class="carousel-dot active"
+                  onclick="goToSlide('carousel-1', 0)"
+                ></button>
+                <button
+                  class="carousel-dot"
+                  onclick="goToSlide('carousel-1', 1)"
+                ></button>
+                <button
+                  class="carousel-dot"
+                  onclick="goToSlide('carousel-1', 2)"
+                ></button>
+              </div>
+              <div class="carousel-overlay">
+                <div class="overlay-text">
+                  Haz clic para ver galería completa
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>E-Commerce</h3>
+              <span class="project-type">Proyecto Personal</span>
+              <p class="project-description">
+                Plataforma completa de comercio electrónico desarrollada con
+                arquitectura separada.
+                <strong>Frontend:</strong> React con TypeScript y Tailwind CSS.
+                <strong>Backend:</strong> .NET Core con Entity Framework y
+                PostgreSQL.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">Tailwind CSS</span>
+                <span class="tech-tag">.NET Core</span>
+                <span class="tech-tag">PostgreSQL</span>
+              </div>
+              <div class="project-links">
+                <div class="repos-section">
+                  <div class="repos-title">Repositorios</div>
+                  <div class="repos-buttons">
+                    <a
+                      href="https://github.com/lucasalassiagit/E-Commerce_frontend"
+                      target="_blank"
+                      class="project-link repo-btn"
+                    >
+                      <span class="btn-text">Frontend</span>
+                    </a>
+                    <a
+                      href="https://github.com/lucasalassiagit/E-Commerce_backend"
+                      target="_blank"
+                      class="project-link repo-btn"
+                    >
+                      <span class="btn-text">Backend</span>
+                    </a>
+                  </div>
+                </div>
+                <a
+                  href="https://e-comercere.netlify.app"
+                  target="_blank"
+                  class="project-link demo"
+                >
+                  <i class="fas fa-external-link-alt"></i>
+                  <span class="btn-text">Sitio Web</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Proyecto 2: Red Social -->
+          <div class="project-card">
+            <div
+              class="project-carousel"
+              id="carousel-2"
+              data-project="red-social"
+            >
+              <div class="carousel-track">
+                <div class="carousel-slide">
+                  <img
+                    src="CapturasSitiosWeb/red-social/Home-red-social.jpeg"
+                    alt="Red Social - Feed principal"
+                  />
+                </div>
+                <div class="carousel-slide">
+                  <img
+                    src="CapturasSitiosWeb/red-social/Perfil-red-social.jpeg"
+                    alt="Red Social - Perfil de usuario"
+                  />
+                </div>
+                <div class="carousel-slide">
+                  <img
+                    src="CapturasSitiosWeb/red-social/Login-red-social.jpeg"
+                    alt="Red Social - Login"
+                  />
+                </div>
+                <div class="carousel-slide">
+                  <img
+                    src="CapturasSitiosWeb/red-social/registro-red-social.jpeg"
+                    alt="Red Social - Register"
+                  />
+                </div>
+                <div class="carousel-slide">
+                  <img
+                    src="CapturasSitiosWeb/red-social/editar-perfil-red-social.jpeg"
+                    alt="Red Social - Editar Perfil"
+                  />
+                </div>
+                <div class="carousel-slide">
+                  <img
+                    src="CapturasSitiosWeb/red-social/Comentarios-red-social.jpeg"
+                    alt="Red Social - Comentarios"
+                  />
+                </div>
+              </div>
+              <button
+                class="carousel-btn prev"
+                onclick="moveSlide('carousel-2', -1)"
+              >
+                ❮
+              </button>
+              <button
+                class="carousel-btn next"
+                onclick="moveSlide('carousel-2', 1)"
+              >
+                ❯
+              </button>
+              <div class="carousel-dots">
+                <button
+                  class="carousel-dot active"
+                  onclick="goToSlide('carousel-2', 0)"
+                ></button>
+                <button
+                  class="carousel-dot"
+                  onclick="goToSlide('carousel-2', 1)"
+                ></button>
+                <button
+                  class="carousel-dot"
+                  onclick="goToSlide('carousel-2', 2)"
+                ></button>
+              </div>
+              <div class="carousel-overlay">
+                <div class="overlay-text">
+                  Haz clic para ver galería completa
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>Red Social</h3>
+              <span class="project-type">Proyecto Personal</span>
+              <p class="project-description">
+                Aplicación web de red social con sistema de publicaciones,
+                interacciones y gestión de usuarios. Implementa autenticación
+                JWT y real-time updates.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">NestJs</span>
+                <span class="tech-tag">PostgreSQL</span>
+              </div>
+              <div class="project-links">
+                <div class="repos-section">
+                  <div class="repos-title">Repositorios</div>
+                  <div class="repos-buttons">
+                    <a
+                      href="https://github.com/lucasalassiagit/Red-Social-frontend"
+                      target="_blank"
+                      class="project-link repo-btn"
+                    >
+                      <span class="btn-text">Frontend</span>
+                    </a>
+                    <a
+                      href="https://github.com/lucasalassiagit/Red-Social-backend"
+                      target="_blank"
+                      class="project-link repo-btn"
+                    >
+                      <span class="btn-text">Backend</span>
+                    </a>
+                  </div>
+                </div>
+                <a
+                  href="#"
+                  class="project-link demo disabled"
+                  style="
+                    pointer-events: none;
+                    opacity: 0.6;
+                    cursor: not-allowed;
+                  "
+                >
+                  <i class="fas fa-external-link-alt"></i>
+                  Proximamente
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Proyecto 3: Carrito de Compras -->
+          <div class="project-card">
+            <div
+              class="project-carousel"
+              id="carousel-2"
+              data-project="red-social"
+            >
+              <div class="carousel-track">
+                <div class="carousel-slide">
+                  <img
+                    src="CapturasSitiosWeb/gestor-compras/compras - homeDemo.png"
+                    alt="Carrito - Home"
+                  />
+                </div>
+                <div class="carousel-slide">
+                  <img
+                    src="CapturasSitiosWeb/gestor-compras/compras-login.png"
+                    alt="Carrito - Login"
+                  />
+                </div>
+                <div class="carousel-slide">
+                  <img
+                    src="CapturasSitiosWeb/gestor-compras/compras - pedidos.png"
+                    alt="Carrito - Pedidos"
+                  />
+                </div>
+                <div class="carousel-slide">
+                  <img
+                    src="CapturasSitiosWeb/gestor-compras/compras - clientes.png"
+                    alt="Carrito - Clientes"
+                  />
+                </div>
+                <div class="carousel-slide">
+                  <img
+                    src="CapturasSitiosWeb/gestor-compras/compras - productos.png"
+                    alt="Carrito - Productos"
+                  />
+                </div>
+              </div>
+              <button
+                class="carousel-btn prev"
+                onclick="moveSlide('carousel-2', -1)"
+              >
+                ❮
+              </button>
+              <button
+                class="carousel-btn next"
+                onclick="moveSlide('carousel-2', 1)"
+              >
+                ❯
+              </button>
+              <div class="carousel-dots">
+                <button
+                  class="carousel-dot active"
+                  onclick="goToSlide('carousel-2', 0)"
+                ></button>
+                <button
+                  class="carousel-dot"
+                  onclick="goToSlide('carousel-2', 1)"
+                ></button>
+                <button
+                  class="carousel-dot"
+                  onclick="goToSlide('carousel-2', 2)"
+                ></button>
+              </div>
+              <div class="carousel-overlay">
+                <div class="overlay-text">
+                  Haz clic para ver galería completa
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>Sistema de Gestión de Compras/Pedidos</h3>
+              <span class="project-type">Proyecto Académico</span>
+              <p class="project-description">
+                Sistema de carrito de compras funcional con gestión de productos
+                y proceso de checkout. Desarrollado como parte de mi formación
+                académica.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">ASP.NET Core MVC</span>
+                <span class="tech-tag">SQL Server</span>
+                <span class="tech-tag">Bootstrap</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://github.com/lucasalassiagit/SistemaDeGestionMVC"
+                  target="_blank"
+                  class="project-link"
+                >
+                  <i class="fab fa-github"></i>
+                  Código
+                </a>
+                <a
+                  href="http://www.gestorproductos.somee.com"
+                  target="_blank"
+                  class="project-link demo"
+                >
+                  <i class="fas fa-external-link-alt"></i>
+                  Sitio Web
+                </a>
+              </div>
+            </div>
+          </div> 
+
+        
+          <!-- Proyecto 4: Estadísticas Mundiales -->
+          <div class="project-card">
+            <div
+              class="project-carousel"
+              id="carousel-2"
+              data-project="red-social"
+            >
+              <div class="carousel-track">
+                <div class="carousel-slide">
+                  <img
+                    src="CapturasSitiosWeb/estadisticas-mundiales/home-estadisticas.png"
+                    alt="Estadísticas - Home"
+                  />
+                </div>
+                <div class="carousel-slide">
+                  <img
+                    src="CapturasSitiosWeb/estadisticas-mundiales/galeria-estadisticas.png"
+                    alt="Estadísticas - Galery"
+                  />
+                </div>
+                <div class="carousel-slide">
+                  <img
+                    src="CapturasSitiosWeb/estadisticas-mundiales/estadisticas - estadisticas.png"
+                    alt="Estadísticas - EstadisticasMundiales"
+                  />
+                </div>
+                <div class="carousel-slide">
+                  <img
+                    src="CapturasSitiosWeb/estadisticas-mundiales/datos-curiosos-estadisticas.png"
+                    alt="Estadísticas - Datos Curiosos"
+                  />
+                </div>
+                <div class="carousel-slide">
+                  <img
+                    src="CapturasSitiosWeb/estadisticas-mundiales/registro-estadisticas.png"
+                    alt="Estadísticas - Register"
+                  />
+                </div>
+              </div>
+              <button
+                class="carousel-btn prev"
+                onclick="moveSlide('carousel-2', -1)"
+              ></button>
+              <button
+                class="carousel-btn next"
+                onclick="moveSlide('carousel-2', 1)"
+              ></button>
+              <div class="carousel-dots">
+                <button
+                  class="carousel-dot active"
+                  onclick="goToSlide('carousel-2', 0)"
+                ></button>
+                <button
+                  class="carousel-dot"
+                  onclick="goToSlide('carousel-2', 1)"
+                ></button>
+                <button
+                  class="carousel-dot"
+                  onclick="goToSlide('carousel-2', 2)"
+                ></button>
+              </div>
+              <div class="carousel-overlay">
+                <div class="overlay-text">
+                  Haz clic para ver galería completa
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>Estadísticas Mundiales</h3>
+              <span class="project-type">Proyecto Académico</span>
+              <p class="project-description">
+                Sitio web estático consumiendo API sobre estadísticas mundiales.
+                Trabajo Integrador Programación 3 con diseño responsive y
+                visualización de datos interactiva.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">HTML</span>
+                <span class="tech-tag">CSS</span>
+                <span class="tech-tag">Bootstrap</span>
+                <span class="tech-tag">JavaScript</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://github.com/lucasalassiagit/EstadisticasMundiales"
+                  target="_blank"
+                  class="project-link"
+                >
+                  <i class="fab fa-github"></i>
+                  Código
+                </a>
+                <a
+                  href="https://lucasalassiagit.github.io/EstadisticasMundiales/index.html"
+                  target="_blank"
+                  class="project-link demo"
+                >
+                  <i class="fas fa-external-link-alt"></i>
+                  Sitio Web
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Proyecto 5: Gestor Mantenimiento Industrial -->
+          <div class="project-card">
+            <div
+              class="project-carousel"
+              id="carousel-2"
+              data-project="red-social"
+            >
+              <div class="carousel-track">
+                <div class="carousel-slide">
+                  <img
+                    src="CapturasSitiosWeb/gestor-matenimiento/mantenimiento - dashboard.png"
+                    alt="Mantenimiento - Dashboard"
+                  />
+                </div>
+                <div class="carousel-slide">
+                  <img
+                    src="CapturasSitiosWeb/gestor-matenimiento/mantenimiento - operarios.png"
+                    alt="Mantenimiento - Operarios"
+                  />
+                </div>
+                <div class="carousel-slide">
+                  <img
+                    src="CapturasSitiosWeb/gestor-matenimiento/mantenimiento - maquinas.png"
+                    alt="Mantenimiento - Maquinas"
+                  />
+                </div>
+                <div class="carousel-slide">
+                  <img
+                    src="CapturasSitiosWeb/gestor-matenimiento/mantenimiento - tareas.png"
+                    alt="Mantenimiento - Tareas"
+                  />
+                </div>
+                <div class="carousel-slide">
+                  <img
+                    src="CapturasSitiosWeb/gestor-matenimiento/mantenimiento - historial.png"
+                    alt="Mantenimiento - Historial"
+                  />
+                </div>
+                <div class="carousel-slide">
+                  <img
+                    src="CapturasSitiosWeb/gestor-matenimiento/mantenimiento - notificaciones.png"
+                    alt="Mantenimiento - Notificacion"
+                  />
+                </div>
+              </div>
+              <button
+                class="carousel-btn prev"
+                onclick="moveSlide('carousel-2', -1)"
+              ></button>
+              <button
+                class="carousel-btn next"
+                onclick="moveSlide('carousel-2', 1)"
+              ></button>
+              <div class="carousel-dots">
+                <button
+                  class="carousel-dot active"
+                  onclick="goToSlide('carousel-2', 0)"
+                ></button>
+                <button
+                  class="carousel-dot"
+                  onclick="goToSlide('carousel-2', 1)"
+                ></button>
+                <button
+                  class="carousel-dot"
+                  onclick="goToSlide('carousel-2', 2)"
+                ></button>
+              </div>
+              <div class="carousel-overlay">
+                <div class="overlay-text">
+                  Haz clic para ver galería completa
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>Gestor de Matenimiento Industrial</h3>
+              <span class="project-type">Proyecto Académico</span>
+              <p class="project-description">
+                Sistema de Gestión de Mantenimiento con asignación de
+                tareas a operarios y máquinas, y seguimiento de estados
+                (Pendiente, Proceso, Finalizada). Desarrollado como parte de mi
+                formación académica para la materia Programacion 4.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">NestJs</span>
+                <span class="tech-tag">TypeORM</span>
+                <span class="tech-tag">MySQL</span>
+              </div>
+              <div class="project-links">
+                <div class="repos-section">
+                  <div class="repos-title">Repositorios</div>
+                  <div class="repos-buttons">
+                    <a
+                      href="https://github.com/lucasalassiagit/Gestor-matenimiento-frontend"
+                      target="_blank"
+                      class="project-link repo-btn"
+                    >
+                      <span class="btn-text">Frontend</span>
+                    </a>
+                    <a
+                      href="https://github.com/lucasalassiagit/Gestor-Mantenimiento-backend"
+                      target="_blank"
+                      class="project-link repo-btn"
+                    >
+                      <span class="btn-text">Backend</span>
+                    </a>
+                  </div>
+                </div>
+                <a
+                  href="#"
+                  class="project-link demo disabled"
+                  style="
+                    pointer-events: none;
+                    opacity: 0.6;
+                    cursor: not-allowed;
+                  "
+                >
+                  <i class="fas fa-external-link-alt"></i>
+                  Proximamente
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="education">
+        <h2>Formación Académica</h2>
+        <div class="education">
+          <div class="education-item">
+            <h3>Técnico Universitario en Programación</h3>
+            <p class="institution">UTN - Facultad Regional Rafaela</p>
+            <p class="period">2024 - Actualidad (Cursando 2do año)</p>
+          </div>
+          <div class="education-item">
+            <h3>Técnico en Equipos e Instalaciones Electromecánicas</h3>
+            <p class="institution">
+              Escuela Técnica N.º 460 "Guillermo Lehmann"
+            </p>
+            <p class="period">Rafaela, Santa Fe - Finalizado en 2018</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section contact" id="contact">
+        <h2>Contacto</h2>
+        <p>
+          ¿Interesado en trabajar juntos o conocer más sobre mis proyectos?
+          ¡Conectemos!
+        </p>
+
+        <div class="contact-info">
+          <div class="contact-item">
+            <strong>
+              <i class="fas fa-envelope"></i>
+              Email
+            </strong>
+            <p>lucasalassia1@outlook.com</p>
+          </div>
+          <div class="contact-item">
+            <strong>
+              <i class="fas fa-phone"></i>
+              Teléfono
+            </strong>
+            <p>3492 - 306412</p>
+          </div>
+          <div class="contact-item">
+            <strong>
+              <i class="fas fa-map-marker-alt"></i>
+              Ubicación
+            </strong>
+            <p>Rafaela, Santa Fe, Argentina</p>
+          </div>
+        </div>
+
+        <div class="contact-links">
+          <a href="mailto:lucasalassia1@outlook.com" class="contact-btn">
+            <i class="fas fa-envelope"></i>
+            Enviar Email
+          </a>
+          <a
+            href="https://www.linkedin.com/in/lucas-alassia-749274239/"
+            target="_blank"
+            class="contact-btn"
+          >
+            <i class="fab fa-linkedin"></i>
+            LinkedIn
+          </a>
+          <a
+            href="https://github.com/lucasalassiagit"
+            target="_blank"
+            class="contact-btn"
+          >
+            <i class="fab fa-github"></i>
+            GitHub
+          </a>
+          <!-- botón para descargar CV -->
+          <a
+            href="Cv Alassia Lucas.pdf"
+            download="CV-Lucas-Alassia.pdf"
+            class="contact-btn cv-download"
+          >
+            <i class="fas fa-download"></i>
+            Descargar CV
+          </a>
+        </div>
+      </section>
+    </div>
+
+    <script>
+      // Variables globales para el modal
+      let currentModalImages = [];
+      let currentModalIndex = 0;
+
+      // Animación de scroll para las secciones
+      document.addEventListener("DOMContentLoaded", function () {
+        const sections = document.querySelectorAll(".section");
+        const navbar = document.getElementById("navbar");
+        const navLinks = document.querySelectorAll(".nav-links a");
+
+        // Observer para animaciones de secciones
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("visible");
+
+                // Actualizar navegación activa
+                const id = entry.target.getAttribute("id");
+                navLinks.forEach((link) => {
+                  link.classList.remove("active");
+                  if (link.getAttribute("href") === `#${id}`) {
+                    link.classList.add("active");
+                  }
+                });
+              }
+            });
+          },
+          {
+            threshold: 0.1,
+            rootMargin: "0px 0px -50px 0px",
+          }
+        );
+
+        sections.forEach((section) => {
+          observer.observe(section);
+        });
+
+        // Efecto de scroll en navbar
+        window.addEventListener("scroll", () => {
+          if (window.scrollY > 100) {
+            navbar.classList.add("scrolled");
+          } else {
+            navbar.classList.remove("scrolled");
+          }
+        });
+
+        // Efecto de partículas
+        createParticles();
+
+        // Inicializar carruseles
+        initializeCarousels();
+
+        // Event listeners para el modal
+        setupModalEvents();
+      });
+
+      function createParticles() {
+        const particlesContainer = document.getElementById("particles");
+        const particleCount = 30;
+
+        for (let i = 0; i < particleCount; i++) {
+          const particle = document.createElement("div");
+          particle.classList.add("particle");
+
+          // Posición y tamaño aleatorios
+          const size = Math.random() * 4 + 1;
+          const posX = Math.random() * 100;
+          const delay = Math.random() * 6;
+          const duration = Math.random() * 4 + 4;
+
+          particle.style.width = `${size}px`;
+          particle.style.height = `${size}px`;
+          particle.style.left = `${posX}%`;
+          particle.style.animationDelay = `${delay}s`;
+          particle.style.animationDuration = `${duration}s`;
+
+          particlesContainer.appendChild(particle);
+        }
+      }
+
+      // Efecto de escritura para el título
+      /*function typeWriter(element, text, speed = 100) {
+        let i = 0;
+        element.innerHTML = "";
+
+        function type() {
+          if (i < text.length) {
+            element.innerHTML += text.charAt(i);
+            i++;
+            setTimeout(type, speed);
+          }
+        }
+        type();
+      }
+
+      // Inicializar efecto de máquina de escribir
+      window.addEventListener("load", () => {
+        const title = document.querySelector("header h1");
+        const originalText = title.textContent;
+        typeWriter(title, originalText, 150);
+      });*/
+
+      // NUEVO: Configurar eventos del modal
+      function setupModalEvents() {
+        // Event listeners para los carruseles
+        document.querySelectorAll(".project-carousel").forEach((carousel) => {
+          carousel.addEventListener("click", (e) => {
+            if (
+              !e.target.closest(".carousel-btn") &&
+              !e.target.closest(".carousel-dot")
+            ) {
+              openModal(carousel);
+            }
+          });
+        });
+
+        // Event listeners para navegación del modal
+        document
+          .getElementById("modalPrev")
+          .addEventListener("click", () => moveModalSlide(-1));
+        document
+          .getElementById("modalNext")
+          .addEventListener("click", () => moveModalSlide(1));
+
+        // Event listener para teclado
+        document.addEventListener("keydown", handleModalKeyboard);
+      }
+
+      // NUEVO: Abrir modal con carrusel completo
+      function openModal(carousel) {
+        const modal = document.getElementById("imageModal");
+        const modalTrack = document.getElementById("modalTrack");
+        const modalDots = document.getElementById("modalDots");
+
+        // Obtener todas las imágenes del carrusel
+        const images = Array.from(
+          carousel.querySelectorAll(".carousel-slide img")
+        );
+        currentModalImages = images.map((img) => ({
+          src: img.src,
+          alt: img.alt,
+        }));
+
+        currentModalIndex = 0;
+
+        // Limpiar modal
+        modalTrack.innerHTML = "";
+        modalDots.innerHTML = "";
+
+        // Crear slides para el modal
+        currentModalImages.forEach((image, index) => {
+          const slide = document.createElement("div");
+          slide.className = "modal-slide";
+          slide.innerHTML = `<img src="${image.src}" alt="${image.alt}">`;
+          modalTrack.appendChild(slide);
+
+          // Crear dots
+          const dot = document.createElement("button");
+          dot.className = `modal-dot ${index === 0 ? "active" : ""}`;
+          dot.addEventListener("click", () => goToModalSlide(index));
+          modalDots.appendChild(dot);
+        });
+
+        // Actualizar contador
+        updateModalCounter();
+
+        // Mostrar modal
+        modal.classList.add("active");
+        document.body.style.overflow = "hidden";
+      }
+
+      // NUEVO: Navegación del modal
+      function moveModalSlide(direction) {
+        currentModalIndex += direction;
+
+        if (currentModalIndex < 0) {
+          currentModalIndex = currentModalImages.length - 1;
+        } else if (currentModalIndex >= currentModalImages.length) {
+          currentModalIndex = 0;
+        }
+
+        updateModalSlide();
+      }
+
+      function goToModalSlide(index) {
+        currentModalIndex = index;
+        updateModalSlide();
+      }
+
+      function updateModalSlide() {
+        const modalTrack = document.getElementById("modalTrack");
+        const modalDots = document.querySelectorAll(".modal-dot");
+
+        // Mover track
+        modalTrack.style.transform = `translateX(-${currentModalIndex * 100}%)`;
+
+        // Actualizar dots
+        modalDots.forEach((dot, index) => {
+          dot.classList.toggle("active", index === currentModalIndex);
+        });
+
+        // Actualizar contador
+        updateModalCounter();
+      }
+
+      function updateModalCounter() {
+        const counter = document.getElementById("modalCounter");
+        counter.textContent = `${currentModalIndex + 1} / ${
+          currentModalImages.length
+        }`;
+      }
+
+      // NUEVO: Navegación con teclado
+      function handleModalKeyboard(e) {
+        const modal = document.getElementById("imageModal");
+        if (!modal.classList.contains("active")) return;
+
+        switch (e.key) {
+          case "ArrowLeft":
+            moveModalSlide(-1);
+            break;
+          case "ArrowRight":
+            moveModalSlide(1);
+            break;
+          case "Escape":
+            closeModal();
+            break;
+        }
+      }
+
+      function closeModal() {
+        const modal = document.getElementById("imageModal");
+        modal.classList.remove("active");
+        document.body.style.overflow = "auto";
+      }
+
+      // Funciones existentes para carruseles pequeños
+      function initializeCarousels() {
+        const carousels = document.querySelectorAll(".project-carousel");
+        carousels.forEach((carousel) => {
+          const track = carousel.querySelector(".carousel-track");
+          track.style.transform = "translateX(0)";
+        });
+      }
+
+      function moveSlide(carouselId, direction) {
+        const carousel = document.getElementById(carouselId);
+        const track = carousel.querySelector(".carousel-track");
+        const slides = carousel.querySelectorAll(".carousel-slide");
+        const dots = carousel.querySelectorAll(".carousel-dot");
+
+        const slideWidth = slides[0].clientWidth;
+        const currentPosition =
+          parseInt(track.style.transform?.split("(")[1]?.split("px")[0]) || 0;
+        const maxPosition = -(slideWidth * (slides.length - 1));
+
+        let newPosition = currentPosition - slideWidth * direction;
+
+        // Limitar el movimiento
+        if (newPosition > 0) newPosition = 0;
+        if (newPosition < maxPosition) newPosition = maxPosition;
+
+        track.style.transform = `translateX(${newPosition}px)`;
+
+        // Actualizar dots
+        const activeIndex = Math.abs(newPosition / slideWidth);
+        dots.forEach((dot, index) => {
+          dot.classList.toggle("active", index === activeIndex);
+        });
+      }
+
+      function goToSlide(carouselId, slideIndex) {
+        const carousel = document.getElementById(carouselId);
+        const track = carousel.querySelector(".carousel-track");
+        const slides = carousel.querySelectorAll(".carousel-slide");
+        const dots = carousel.querySelectorAll(".carousel-dot");
+
+        const slideWidth = slides[0].clientWidth;
+        const newPosition = -(slideWidth * slideIndex);
+
+        track.style.transform = `translateX(${newPosition}px)`;
+
+        // Actualizar dots
+        dots.forEach((dot, index) => {
+          dot.classList.toggle("active", index === slideIndex);
+        });
+      }
+
+      // Cerrar modal con botón
+      document
+        .getElementById("modalClose")
+        .addEventListener("click", closeModal);
+
+      // Cerrar modal al hacer clic fuera
+      document.getElementById("imageModal").addEventListener("click", (e) => {
+        if (e.target.id === "imageModal") closeModal();
+      });
+    </script>
+  </body>
+</html>
