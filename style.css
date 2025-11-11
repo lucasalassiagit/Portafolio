@@ -203,13 +203,13 @@ header .subtitle {
   backdrop-filter: blur(10px);
   /*opacity: 0;*/
   /*transform: translateY(50px);*/
-  transition: all 0.8s ease;
+  /*transition: all 0.8s ease;*/
 }
 
-.section.visible {
+/*.section.visible {
   opacity: 1;
   transform: translateY(0);
-}
+}*/
 
 h2 {
   color: var(--primary);
