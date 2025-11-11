@@ -137,20 +137,20 @@ header h1 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  animation: fadeInUp 1s ease-out;
+  /*animation: fadeInUp 1s ease-out;*/
 }
 
 header p {
   font-size: 1.4em;
   opacity: 0.9;
   margin-bottom: 8px;
-  animation: fadeInUp 1s ease-out 0.2s both;
+  /*animation: fadeInUp 1s ease-out 0.2s both;*/
 }
 
 header .subtitle {
   font-size: 1.1em;
   opacity: 0.7;
-  animation: fadeInUp 1s ease-out 0.4s both;
+  /*animation: fadeInUp 1s ease-out 0.4s both;*/
 }
 
 .cta-buttons {
@@ -159,7 +159,7 @@ header .subtitle {
   justify-content: center;
   margin-top: 40px;
   flex-wrap: wrap;
-  animation: fadeInUp 1s ease-out 0.6s both;
+  /*animation: fadeInUp 1s ease-out 0.6s both;*/
 }
 
 .cta-btn {
@@ -201,8 +201,8 @@ header .subtitle {
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
   border: 1px solid rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
-  opacity: 0;
-  transform: translateY(50px);
+  /*opacity: 0;*/
+  /*transform: translateY(50px);*/
   transition: all 0.8s ease;
 }
 
