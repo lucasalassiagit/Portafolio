@@ -9,7 +9,11 @@
     />
     <link rel="stylesheet" href="style.css" />
     <title>Lucas Nahuel Alassia - Portafolio</title>
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💻</text></svg>">
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💻</text></svg>"
+    />
   </head>
   <body>
     <!-- Navegación fija -->
@@ -49,8 +53,8 @@
     <header>
       <div class="container">
         <h1>Lucas Nahuel Alassia</h1>
-        <p>Estudiante de Técnicatura Universitaria en Programación</p>
-        <p class="subtitle">Desarrollador Backend</p>
+        <p>Técnico Universitario en Programación</p>
+        <p class="subtitle">Desarrollador FullStack</p>
         <div class="cta-buttons">
           <a href="#projects" class="cta-btn">
             <i class="fas fa-rocket"></i>
@@ -73,16 +77,17 @@
           </div>
           <div class="about-text">
             <p>
-              ¡Hola! Soy Lucas, un desarrollador apasionado por la tecnología y
-              el aprendizaje continuo. Actualmente estoy cursando segundo año de
-              la carrera Técnico Universitario en Programación en la UTN -
-              Facultad Regional Rafaela.
+              ¡Hola! Soy Lucas, un desarrollador de software apasionado por la
+              tecnología y la creación de soluciones eficientes. Soy Técnico
+              Universitario en Programación en la UTN - Facultad Regional
+              Rafaela.
             </p>
             <p>
-              Me especializo en desarrollo full stack con .NET y React, y tengo
-              experiencia creando aplicaciones web completas, desde el diseño de
-              bases de datos hasta la implementación de interfaces de usuario
-              modernas y funcionales.
+              Me especializo en
+              <strong>Desarrollo Backend y Full Stack</strong> utilizando .NET y
+              React. Tengo experiencia construyendo aplicaciones web completas,
+              abarcando desde la arquitectura de bases de datos robustas hasta
+              la implementación de interfaces de usuario modernas y funcionales.
             </p>
             <div class="qualities">
               <span class="quality-tag">Autodidacta</span>
@@ -525,9 +530,8 @@
                 </a>
               </div>
             </div>
-          </div> 
+          </div>
 
-        
           <!-- Proyecto 4: Estadísticas Mundiales -->
           <div class="project-card">
             <div
@@ -633,6 +637,130 @@
               </div>
             </div>
           </div>
+
+          <!-- Proyecto 5: Gestor Mantenimiento Industrial -->
+          <div class="project-card">
+            <div
+              class="project-carousel"
+              id="carousel-2"
+              data-project="red-social"
+            >
+              <div class="carousel-track">
+                <div class="carousel-slide">
+                  <img
+                    src="CapturasSitiosWeb/gestor-matenimiento/mantenimiento - dashboard.png"
+                    alt="Mantenimiento - Dashboard"
+                  />
+                </div>
+                <div class="carousel-slide">
+                  <img
+                    src="CapturasSitiosWeb/gestor-matenimiento/mantenimiento - operarios.png"
+                    alt="Mantenimiento - Operarios"
+                  />
+                </div>
+                <div class="carousel-slide">
+                  <img
+                    src="CapturasSitiosWeb/gestor-matenimiento/mantenimiento - maquinas.png"
+                    alt="Mantenimiento - Maquinas"
+                  />
+                </div>
+                <div class="carousel-slide">
+                  <img
+                    src="CapturasSitiosWeb/gestor-matenimiento/mantenimiento - tareas.png"
+                    alt="Mantenimiento - Tareas"
+                  />
+                </div>
+                <div class="carousel-slide">
+                  <img
+                    src="CapturasSitiosWeb/gestor-matenimiento/mantenimiento - historial.png"
+                    alt="Mantenimiento - Historial"
+                  />
+                </div>
+                <div class="carousel-slide">
+                  <img
+                    src="CapturasSitiosWeb/gestor-matenimiento/mantenimiento - notificaciones.png"
+                    alt="Mantenimiento - Notificacion"
+                  />
+                </div>
+              </div>
+              <button
+                class="carousel-btn prev"
+                onclick="moveSlide('carousel-2', -1)"
+              ></button>
+              <button
+                class="carousel-btn next"
+                onclick="moveSlide('carousel-2', 1)"
+              ></button>
+              <div class="carousel-dots">
+                <button
+                  class="carousel-dot active"
+                  onclick="goToSlide('carousel-2', 0)"
+                ></button>
+                <button
+                  class="carousel-dot"
+                  onclick="goToSlide('carousel-2', 1)"
+                ></button>
+                <button
+                  class="carousel-dot"
+                  onclick="goToSlide('carousel-2', 2)"
+                ></button>
+              </div>
+              <div class="carousel-overlay">
+                <div class="overlay-text">
+                  Haz clic para ver galería completa
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>Gestor de Matenimiento Industrial</h3>
+              <span class="project-type">Proyecto Académico</span>
+              <p class="project-description">
+                Sistema de Gestión de Mantenimiento con asignación de tareas a
+                operarios y máquinas, y seguimiento de estados (Pendiente,
+                Proceso, Finalizada). Desarrollado como parte de mi formación
+                académica para la materia Programacion 4.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">NestJs</span>
+                <span class="tech-tag">TypeORM</span>
+                <span class="tech-tag">MySQL</span>
+              </div>
+              <div class="project-links">
+                <div class="repos-section">
+                  <div class="repos-title">Repositorios</div>
+                  <div class="repos-buttons">
+                    <a
+                      href="https://github.com/lucasalassiagit/Gestor-matenimiento-frontend"
+                      target="_blank"
+                      class="project-link repo-btn"
+                    >
+                      <span class="btn-text">Frontend</span>
+                    </a>
+                    <a
+                      href="https://github.com/lucasalassiagit/Gestor-Mantenimiento-backend"
+                      target="_blank"
+                      class="project-link repo-btn"
+                    >
+                      <span class="btn-text">Backend</span>
+                    </a>
+                  </div>
+                </div>
+                <a
+                  href="#"
+                  class="project-link demo disabled"
+                  style="
+                    pointer-events: none;
+                    opacity: 0.6;
+                    cursor: not-allowed;
+                  "
+                >
+                  <i class="fas fa-external-link-alt"></i>
+                  Proximamente
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -642,7 +770,7 @@
           <div class="education-item">
             <h3>Técnico Universitario en Programación</h3>
             <p class="institution">UTN - Facultad Regional Rafaela</p>
-            <p class="period">2024 - Actualidad (Cursando 2do año)</p>
+            <p class="period">2024 - 2025</p>
           </div>
           <div class="education-item">
             <h3>Técnico en Equipos e Instalaciones Electromecánicas</h3>
@@ -704,8 +832,8 @@
           </a>
           <!-- botón para descargar CV -->
           <a
-            href="CV Alassia Lucas.pdf"
-            download="CV Alassia Lucas.pdf"
+            href="CV Lucas Alassia.pdf"
+            download="CV Lucas Alassia.pdf"
             class="contact-btn cv-download"
           >
             <i class="fas fa-download"></i>
